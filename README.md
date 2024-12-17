@@ -28,7 +28,7 @@ This project builds a real-time data analytics dashboard by integrating **Databr
 
 ## Project Architecture
 
-```mermaid
+
 flowchart TD
     User -->|Input| Streamlit Dashboard
     Streamlit Dashboard -->|API Call| Databricks REST API
@@ -36,7 +36,7 @@ flowchart TD
     Databricks SQL -->|Return Data| REST API
     REST API -->|JSON Response| Streamlit Dashboard
     Streamlit Dashboard -->|Visualize| Plotly
-```
+    
 
 1. **Streamlit** acts as the frontend for users to input parameters and visualize results.
 2. **Databricks REST APIs** interact with Databricks SQL for query execution.
