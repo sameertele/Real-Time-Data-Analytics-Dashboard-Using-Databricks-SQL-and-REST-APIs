@@ -120,19 +120,17 @@ import os
 import json
 from dotenv import load_dotenv
 
-# Load Databricks credentials
 load_dotenv()
 DATABRICKS_HOST = os.getenv("DATABRICKS_HOST")
 DATABRICKS_TOKEN = os.getenv("DATABRICKS_TOKEN")
 
-# API Endpoint
+# API
 url = f"{DATABRICKS_HOST}/api/2.0/sql/statements"
 headers = {
     "Authorization": f"Bearer {DATABRICKS_TOKEN}",
     "Content-Type": "application/json"
 }
 
-# SQL Statement
 payload = {
     "statement": "SELECT * FROM my_table LIMIT 10",
     "warehouse_id": "<warehouse-id>",
@@ -140,7 +138,6 @@ payload = {
     "schema": "default"
 }
 
-# Execute SQL
 response = requests.post(url, headers=headers, data=json.dumps(payload))
 print(response.json())
 ```
