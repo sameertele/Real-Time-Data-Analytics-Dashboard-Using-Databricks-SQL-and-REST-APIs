@@ -48,7 +48,7 @@ This project builds a real-time data analytics dashboard by integrating **Databr
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/databricks-real-time-dashboard.git
+   git clone https://github.com/sameertele/Real-Time Data Analytics Dashboard Using Databricks SQL and REST APIs.git
    cd databricks-real-time-dashboard
    ```
 
