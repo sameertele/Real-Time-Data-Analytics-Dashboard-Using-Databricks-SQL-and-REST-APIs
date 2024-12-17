@@ -13,8 +13,8 @@ spark = SparkSession.builder \
     .config("spark.sql.catalogImplementation", "hive") \
     .getOrCreate()
 
-# 2. Define the REST API details (Using OpenWeatherMap API as an example)
-API_KEY = "your_openweather_api_key"  
+# 2. Define the REST API details
+API_KEY = "openweather_api_key"  
 BASE_URL = "https://api.openweathermap.org/data/2.5/weather"
 CITIES = ["Austin", "Houston", "Dallas", "San Antonio", "Fort Worth"] 
 
